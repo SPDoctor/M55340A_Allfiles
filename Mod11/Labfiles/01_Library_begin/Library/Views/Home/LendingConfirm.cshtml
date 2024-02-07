@@ -1,0 +1,10 @@
+﻿@{
+    ViewData["Title"] = "ThankYou";
+}
+
+<h1 class="title">You have borrowed a book - thank you.</h1>
+
+<div class="text-center">
+    <button class="btn btn-info" type="button" onclick="location.href='@Url.Action("Index", "Home")'">Home</button>
+    <button class="btn btn-info" type="button" onclick="location.href='@Url.Action("GetBooksByGenre", "Home")'">Back to Books List</button>
+</div>

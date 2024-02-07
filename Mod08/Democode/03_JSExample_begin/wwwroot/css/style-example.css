@@ -1,0 +1,15 @@
+﻿body {
+    font-family: "Times New Roman", Times, serif;
+}
+
+#main-heading {
+    font-size: 200%;
+    color: pink;
+    font-family: 'Segoe UI';
+}
+
+div.callout p {
+    color: blue;
+    background-color: lightblue;
+    border: 2px solid darkblue;
+}

@@ -1,0 +1,15 @@
+Original/
+Templates/
+PPT/PPTExamples/
+**/bin
+**/obj
+*.suo
+*.user
+*.ldf
+*.mdf
+**/.vs
+**/TargetSolution
+node_modules
+OldAllfilesOld.zip
+Instructions/
+*delete
