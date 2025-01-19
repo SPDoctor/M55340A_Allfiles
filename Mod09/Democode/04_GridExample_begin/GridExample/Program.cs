@@ -1,24 +1,35 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Logging;
+﻿using Microsoft.EntityFrameworkCore;
+using GridExample.Data;
+using GridExample.Middleware;
 
-namespace GridExample
+var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<ChessLeagueContext>(options =>
+    options.UseSqlite("Data Source=chessLeague.db"));
+
+// Add services to the container.
+builder.Services.AddControllersWithViews();
+
+var app = builder.Build();
+
+// Configure the HTTP request pipeline.
+if (!app.Environment.IsDevelopment())
 {
-    public class Program
-    {
-        public static void Main(string[] args)
-        {
-            CreateWebHostBuilder(args).Build().Run();
-        }
-
-        public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
-            WebHost.CreateDefaultBuilder(args)
-                .UseStartup<Startup>();
-    }
+  app.UseExceptionHandler("/Home/Error");
+  // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+  app.UseHsts();
 }
+
+app.UseStaticFiles();
+
+app.UseNodeModules(app.Environment.ContentRootPath);
+
+app.UseRouting();
+
+app.MapControllerRoute(
+    name: "ChessRoute",
+    pattern: "{controller}/{action}/{id?}",
+    defaults: new { controller = "Chess", action = "Index" },
+    constraints: new { id = "[0-9]+" }
+);
+
+app.Run();
