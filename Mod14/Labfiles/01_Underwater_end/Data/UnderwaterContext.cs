@@ -1,4 +1,5 @@
-﻿using Underwater.Models;
+﻿using Microsoft.EntityFrameworkCore;
+using Underwater.Models;
 
 namespace Underwater.Data
 {

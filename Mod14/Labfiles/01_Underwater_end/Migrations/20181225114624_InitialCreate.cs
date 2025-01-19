@@ -1,4 +1,7 @@
-﻿namespace Underwater.Migrations
+﻿using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
+
+namespace Underwater.Migrations
 {
     public partial class InitialCreate : Migration
     {

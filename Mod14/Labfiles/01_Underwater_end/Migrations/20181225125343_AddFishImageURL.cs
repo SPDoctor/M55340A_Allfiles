@@ -1,4 +1,6 @@
-﻿namespace Underwater.Migrations
+﻿using Microsoft.EntityFrameworkCore.Migrations;
+
+namespace Underwater.Migrations
 {
     public partial class AddFishImageURL : Migration
     {

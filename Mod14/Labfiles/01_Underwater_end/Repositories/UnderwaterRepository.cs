@@ -1,4 +1,7 @@
-﻿using Underwater.Data;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.WindowsAzure.Storage;
+using Microsoft.WindowsAzure.Storage.Blob;
+using Underwater.Data;
 using Underwater.Models;
 
 namespace Underwater.Repositories
