@@ -36,7 +36,7 @@ namespace SQLBooksWebApp.Controllers
 
             var book = await _context.Book
                 .Include(b => b.Author)
-                .FirstOrDefaultAsync(m => m.BookID == id);
+                .FirstOrDefaultAsync(m => m.ID == id);
             if (book == null)
             {
                 return NotFound();
@@ -93,7 +93,7 @@ namespace SQLBooksWebApp.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("BookID,Title,AuthorID,Published")] Book book)
         {
-            if (id != book.BookID)
+            if (id != book.ID)
             {
                 return NotFound();
             }
@@ -107,7 +107,7 @@ namespace SQLBooksWebApp.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!BookExists(book.BookID))
+                    if (!BookExists(book.ID))
                     {
                         return NotFound();
                     }
@@ -132,7 +132,7 @@ namespace SQLBooksWebApp.Controllers
 
             var book = await _context.Book
                 .Include(b => b.Author)
-                .FirstOrDefaultAsync(m => m.BookID == id);
+                .FirstOrDefaultAsync(m => m.ID == id);
             if (book == null)
             {
                 return NotFound();
@@ -162,7 +162,7 @@ namespace SQLBooksWebApp.Controllers
 
         private bool BookExists(int id)
         {
-          return _context.Book.Any(e => e.BookID == id);
+          return _context.Book.Any(e => e.ID == id);
         }
     }
 }
