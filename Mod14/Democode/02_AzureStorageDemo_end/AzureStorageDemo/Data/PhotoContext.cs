@@ -1,13 +1,9 @@
 ﻿using AzureStorageDemo.Models;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace AzureStorageDemo.Data
 {
-    public class PhotoContext : DbContext
+  public class PhotoContext : DbContext
     {
         public PhotoContext(DbContextOptions<PhotoContext> options)
           : base(options)

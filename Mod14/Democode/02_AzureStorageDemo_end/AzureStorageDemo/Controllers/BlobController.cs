@@ -1,18 +1,12 @@
-﻿using System;
-using System.Web;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.Configuration;
-using System.IO;
+﻿using AzureStorageDemo.Data;
 using AzureStorageDemo.Models;
-using AzureStorageDemo.Data;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.WindowsAzure.Storage;
 using Microsoft.WindowsAzure.Storage.Blob;
 
 namespace AzureStorageDemo.Controllers
 {
-    public class BlobController : Controller
+  public class BlobController : Controller
     {
         private IConfiguration _configuration;
         private string _connectionString;

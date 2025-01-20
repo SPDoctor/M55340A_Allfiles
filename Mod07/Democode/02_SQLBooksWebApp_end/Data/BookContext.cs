@@ -17,6 +17,6 @@ namespace SQLBooksWebApp.Data
 
         public DbSet<SQLBooksWebApp.Models.Book> Book { get; set; } = default!;
 
-        public DbSet<SQLBooksWebApp.Models.Author>? Author { get; set; }
+        public DbSet<SQLBooksWebApp.Models.Author> Author { get; set; }
     }
 }
