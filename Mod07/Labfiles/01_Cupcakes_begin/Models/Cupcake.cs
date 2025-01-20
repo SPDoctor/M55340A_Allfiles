@@ -1,4 +1,7 @@
-﻿namespace Cupcakes.Models
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace Cupcakes.Models
 {
   public class Cupcake
   {
