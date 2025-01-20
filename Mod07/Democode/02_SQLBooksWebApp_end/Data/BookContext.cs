@@ -12,10 +12,11 @@ namespace SQLBooksWebApp.Data
         public BookContext (DbContextOptions<BookContext> options)
             : base(options)
         {
+            // Database.EnsureDeleted();
             Database.EnsureCreated();
         }
 
-        public DbSet<SQLBooksWebApp.Models.Book> Book { get; set; } = default!;
+    public DbSet<SQLBooksWebApp.Models.Book> Book { get; set; } = default!;
 
         public DbSet<SQLBooksWebApp.Models.Author> Author { get; set; }
     }
