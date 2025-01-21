@@ -16,7 +16,7 @@ namespace Cupcakes.Controllers
             _repository = repository;
             _environment = environment;
         }
-        
+
         public IActionResult Index()
         {
             return View(_repository.GetCupcakes());

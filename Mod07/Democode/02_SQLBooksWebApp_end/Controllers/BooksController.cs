@@ -155,14 +155,14 @@ namespace SQLBooksWebApp.Controllers
             {
                 _context.Book.Remove(book);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool BookExists(int id)
         {
-          return _context.Book.Any(e => e.ID == id);
+            return _context.Book.Any(e => e.ID == id);
         }
     }
 }

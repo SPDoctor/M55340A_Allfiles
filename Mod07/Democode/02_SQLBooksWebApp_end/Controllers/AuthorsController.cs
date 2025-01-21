@@ -22,7 +22,7 @@ namespace SQLBooksWebApp.Controllers
         // GET: Authors
         public async Task<IActionResult> Index()
         {
-              return View(await _context.Author.ToListAsync());
+            return View(await _context.Author.ToListAsync());
         }
 
         // GET: Authors/Details/5
@@ -148,14 +148,14 @@ namespace SQLBooksWebApp.Controllers
             {
                 _context.Author.Remove(author);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool AuthorExists(int id)
         {
-          return _context.Author.Any(e => e.AuthorID == id);
+            return _context.Author.Any(e => e.AuthorID == id);
         }
     }
 }

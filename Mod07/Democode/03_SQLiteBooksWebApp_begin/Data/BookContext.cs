@@ -9,7 +9,7 @@ namespace SQLBooksWebApp.Data
 {
     public class BookContext : DbContext
     {
-        public BookContext (DbContextOptions<BookContext> options)
+        public BookContext(DbContextOptions<BookContext> options)
             : base(options)
         {
             Database.EnsureCreated();
