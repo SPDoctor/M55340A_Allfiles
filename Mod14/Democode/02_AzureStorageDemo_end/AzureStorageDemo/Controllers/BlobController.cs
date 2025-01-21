@@ -6,7 +6,7 @@ using Microsoft.WindowsAzure.Storage.Blob;
 
 namespace AzureStorageDemo.Controllers
 {
-  public class BlobController : Controller
+    public class BlobController : Controller
     {
         private IConfiguration _configuration;
         private string _connectionString;

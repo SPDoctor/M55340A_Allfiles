@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace AzureStorageDemo.Data
 {
-  public class PhotoContext : DbContext
+    public class PhotoContext : DbContext
     {
         public PhotoContext(DbContextOptions<PhotoContext> options)
           : base(options)

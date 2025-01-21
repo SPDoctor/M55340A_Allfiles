@@ -30,5 +30,5 @@ app.MapControllerRoute(
     new { id = "[0-9]+" }
     );
 
-app.MapRazorPages(); 
+app.MapRazorPages();
 app.Run();

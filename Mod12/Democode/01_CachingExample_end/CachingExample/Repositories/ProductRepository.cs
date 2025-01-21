@@ -35,7 +35,7 @@ namespace CachingExample.Repositories
         {
             IEnumerable<Product> products = _context.Products.ToList();
             Dictionary<int, string> productNames = new Dictionary<int, string>();
-            foreach(Product product in products)
+            foreach (Product product in products)
             {
                 productNames[product.Id] = product.Name;
             }

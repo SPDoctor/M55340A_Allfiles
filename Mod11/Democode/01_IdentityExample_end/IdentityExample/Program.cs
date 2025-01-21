@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<StudentContext>(options =>
     options.UseSqlite("Data Source=student.db"));
-builder.Services.AddDefaultIdentity<Student>(options => 
+builder.Services.AddDefaultIdentity<Student>(options =>
 {
     options.Password.RequireDigit = true;
     options.Password.RequiredLength = 7;

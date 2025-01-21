@@ -8,7 +8,7 @@ var app = builder.Build();
 using (var serviceScope = app.Services.CreateScope())
 {
     var services = serviceScope.ServiceProvider;
-    var pollResults = services.GetRequiredService<IPollResultsService>(); 
+    var pollResults = services.GetRequiredService<IPollResultsService>();
     app.Use(async (context, next) =>
     {
         if (context.Request.Query.ContainsKey("favorite"))

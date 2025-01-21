@@ -19,7 +19,7 @@ namespace WorldJourney.Filters
             _fileName = $"log {DateTime.Now.ToString("MM-dd-yyyy-H-mm")}.txt";
             _fullPath = _logPath + _fileName;
         }
-        
+
         public override void OnActionExecuting(ActionExecutingContext filterContext)
         {
             Directory.CreateDirectory(_logPath);
@@ -46,7 +46,7 @@ namespace WorldJourney.Filters
                 }
             }
         }
-        
+
         public override void OnResultExecuted(ResultExecutedContext filterContext)
         {
             string actionName = filterContext.ActionDescriptor.RouteValues["action"];

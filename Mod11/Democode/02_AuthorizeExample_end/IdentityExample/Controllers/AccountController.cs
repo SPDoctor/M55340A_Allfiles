@@ -38,7 +38,7 @@ namespace IdentityExample.Controllers
                 var result = await _signInManager.PasswordSignInAsync(loginModel.UserName, loginModel.Password, loginModel.RememberMe, false);
                 if (result.Succeeded)
                 {
-                   return RedirectToAction("Index", "Student");
+                    return RedirectToAction("Index", "Student");
                 }
             }
             ModelState.AddModelError("", "Faild to Login");

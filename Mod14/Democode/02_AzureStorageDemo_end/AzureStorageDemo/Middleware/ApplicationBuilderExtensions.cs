@@ -2,7 +2,7 @@
 
 namespace AzureStorageDemo.Middleware
 {
-  public static class ApplicationBuilderExtensions
+    public static class ApplicationBuilderExtensions
     {
         public static IApplicationBuilder UseNodeModules(this IApplicationBuilder applicationBuilder, string root)
         {
