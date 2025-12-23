@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using ProductsWebsite.Models;
+﻿using ProductsWebsite.Models;
 using ProductsWebsite.Repositories;
 
 namespace ProductsWebsite.Tests.FakeRepositories

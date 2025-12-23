@@ -1,19 +1,22 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net10.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
     <ImplicitUsings>enable</ImplicitUsings>
-    <OutputType>Exe</OutputType>
+    <Nullable>disable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
-	  <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.1.0" />
-	  <PackageReference Include="MSTest.TestAdapter" Version="2.2.8" />
-	  <PackageReference Include="MSTest.TestFramework" Version="2.2.8" />
+    <PackageReference Include="MSTest" Version="4.0.1" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\ProductsWebsite\ProductsWebsite.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="Microsoft.VisualStudio.TestTools.UnitTesting" />
   </ItemGroup>
 
 </Project>
