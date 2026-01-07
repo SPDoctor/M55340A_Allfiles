@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            font-family: "Times New Roman", Times, serif;
+        }
+        #main-heading {
+            font-size: 200%;
+            color: pink;
+            font-family: 'Segoe UI';
+        }
+        div.callout p {
+            color: blue;
+            background-color: lightblue;
+            border: 2px solid darkblue;
+        }
+    </style>
+    <script>
+        function helloWorld() {
+            alert('Hello World!');
+        }
+    </script>   
+</head>
+<body>
+    <h2 id="main-heading">Welcome to the page!</h2>
+    <p>Regular text</p>
+    <h2>Normal heading</h2>
+    <div class="callout">
+        <p>This is a primary callout.</p>
+    </div>
+    <div>
+        <p>More regular text</p>
+    </div>
+    <a id="clicker">Click Me!</a>
+    <script>
+        document.getElementById("clicker").onclick = helloWorld;
+    </script>   
+</body>
+</html>
