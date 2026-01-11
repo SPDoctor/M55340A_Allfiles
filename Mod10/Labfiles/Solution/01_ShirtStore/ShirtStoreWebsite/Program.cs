@@ -1,5 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Serilog;
 using ShirtStoreWebsite.Data;
 using ShirtStoreWebsite.Services;
 

@@ -6,33 +6,33 @@ using ProductsWebsite.Tests.FakeRepositories;
 
 namespace ProductsWebsite.Tests
 {
-  [TestClass]
-  public class ProductControllerTest
-  {
-    [TestMethod]
-    public void IndexModelShouldContainAllProducts()
+    [TestClass]
+    public class ProductControllerTest
     {
-      // Arrange
-      IProductRepository fakeProductRepository = new FakeProductRepository();
-      ProductController productController = new ProductController(fakeProductRepository);
-      // Act
-      ViewResult viewResult = productController.Index() as ViewResult;
-      List<Product> products = viewResult.Model as List<Product>;
-      // Assert
-      Assert.HasCount(3, products);
-    }
+        [TestMethod]
+        public void IndexModelShouldContainAllProducts()
+        {
+            // Arrange
+            IProductRepository fakeProductRepository = new FakeProductRepository();
+            ProductController productController = new ProductController(fakeProductRepository);
+            // Act
+            ViewResult viewResult = productController.Index() as ViewResult;
+            List<Product> products = viewResult.Model as List<Product>;
+            // Assert
+            Assert.HasCount(3, products);
+        }
 
-    [TestMethod]
-    public void GetProductModelShouldContainTheRightProduct()
-    {
-      // Arrange
-      var fakeProductRepository = new FakeProductRepository();
-      var productController = new ProductController(fakeProductRepository);
-      // Act
-      var viewResult = productController.GetProduct(2) as ViewResult;
-      Product product = viewResult.Model as Product;
-      // Assert
-      Assert.AreEqual(2, product.Id);
+        [TestMethod]
+        public void GetProductModelShouldContainTheRightProduct()
+        {
+            // Arrange
+            var fakeProductRepository = new FakeProductRepository();
+            var productController = new ProductController(fakeProductRepository);
+            // Act
+            var viewResult = productController.GetProduct(2) as ViewResult;
+            Product product = viewResult.Model as Product;
+            // Assert
+            Assert.AreEqual(2, product.Id);
+        }
     }
-  }
 }

@@ -1,0 +1,149 @@
+2026-01-11T19:56:50.4157721+00:00  [INF] User profile is available. Using '"C:\Users\BillA\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2026-01-11T19:56:50.6020634+00:00 4000000a-0008-ff00-b63f-84710c7967bb [INF] Request starting "HTTP/1.1" "GET" "http"://"localhost:54128""""/""" - null null (d509f86a)
+2026-01-11T19:56:50.6777433+00:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2026-01-11T19:56:50.6779518+00:00  [INF] Hosting environment: "Production" (bc5a1a4e)
+2026-01-11T19:56:50.6779900+00:00  [INF] Content root path: "C:\M55340A_Allfiles\Mod10\Labfiles\Solution\01_ShirtStore\ShirtStoreWebsite" (cc26f24e)
+2026-01-11T19:56:50.7792264+00:00 4000000a-0008-ff00-b63f-84710c7967bb [INF] Executing endpoint '"ShirtStoreWebsite.Controllers.ShirtController.Index (ShirtStoreWebsite)"' (500cc934)
+2026-01-11T19:56:50.8060556+00:00 4000000a-0008-ff00-b63f-84710c7967bb [INF] Route matched with "{action = \"Index\", controller = \"Shirt\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "ShirtStoreWebsite.Controllers.ShirtController" ("ShirtStoreWebsite"). (122b2fdf)
+2026-01-11T19:56:53.5661034+00:00 4000000a-0008-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2026-01-11T19:56:53.6245096+00:00 4000000a-0008-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("48"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND [o].[object_id] NOT IN (SELECT [ep].[major_id]
+        FROM [sys].[extended_properties] AS [ep]
+        WHERE [ep].[minor_id] = 0
+            AND [ep].[class] = 1
+            AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0" (0723d8ff)
+2026-01-11T19:56:53.8862228+00:00 4000000a-0008-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Id], [s].[Color], [s].[Price], [s].[Size], [s].[Tax]
+FROM [Shirts] AS [s]" (0723d8ff)
+2026-01-11T19:56:53.9405166+00:00 4000000a-0008-ff00-b63f-84710c7967bb [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2026-01-11T19:56:54.1709562+00:00 4000000a-0008-ff00-b63f-84710c7967bb [INF] Executed ViewResult - view "Index" executed in 230.7788ms. (f66409e9)
+2026-01-11T19:56:54.1723961+00:00 4000000a-0008-ff00-b63f-84710c7967bb [INF] Executed action "ShirtStoreWebsite.Controllers.ShirtController.Index (ShirtStoreWebsite)" in 3365.6616ms (afa2e885)
+2026-01-11T19:56:54.1725577+00:00 4000000a-0008-ff00-b63f-84710c7967bb [INF] Executed endpoint '"ShirtStoreWebsite.Controllers.ShirtController.Index (ShirtStoreWebsite)"' (99874f2b)
+2026-01-11T19:56:54.1879654+00:00 4000000a-0008-ff00-b63f-84710c7967bb [INF] Request finished "HTTP/1.1" "GET" "http"://"localhost:54128""""/""" - 200 null "text/html; charset=utf-8" 3591.987ms (74253ad3)
+2026-01-11T19:56:54.2400048+00:00 4000001d-0000-ff00-b63f-84710c7967bb [INF] Request starting "HTTP/1.1" "GET" "http"://"localhost:54128""""/_framework/aspnetcore-browser-refresh.js""" - null null (d509f86a)
+2026-01-11T19:56:54.2400048+00:00 4000000b-0008-ff00-b63f-84710c7967bb [INF] Request starting "HTTP/1.1" "GET" "http"://"localhost:54128""""/_vs/browserLink""" - null null (d509f86a)
+2026-01-11T19:56:54.2438911+00:00 4000001d-0000-ff00-b63f-84710c7967bb [INF] Request finished "HTTP/1.1" "GET" "http"://"localhost:54128""""/_framework/aspnetcore-browser-refresh.js""" - 200 16519 "application/javascript; charset=utf-8" 3.5324ms (74253ad3)
+2026-01-11T19:56:54.2810193+00:00 4000000b-0008-ff00-b63f-84710c7967bb [INF] Request finished "HTTP/1.1" "GET" "http"://"localhost:54128""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 41.0689ms (74253ad3)
+2026-01-11T20:09:47.7073047+00:00  [INF] User profile is available. Using '"C:\Users\BillA\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2026-01-11T20:09:47.7958425+00:00 4000001c-0002-fe00-b63f-84710c7967bb [INF] Request starting "HTTP/1.1" "GET" "http"://"localhost:54128""""/""" - null null (d509f86a)
+2026-01-11T20:09:47.8210730+00:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2026-01-11T20:09:47.8211678+00:00  [INF] Hosting environment: "Production" (bc5a1a4e)
+2026-01-11T20:09:47.8211887+00:00  [INF] Content root path: "C:\M55340A_Allfiles\Mod10\Labfiles\Solution\01_ShirtStore\ShirtStoreWebsite" (cc26f24e)
+2026-01-11T20:09:47.8905906+00:00 4000001c-0002-fe00-b63f-84710c7967bb [INF] Executing endpoint '"ShirtStoreWebsite.Controllers.ShirtController.Index (ShirtStoreWebsite)"' (500cc934)
+2026-01-11T20:09:47.9198885+00:00 4000001c-0002-fe00-b63f-84710c7967bb [INF] Route matched with "{action = \"Index\", controller = \"Shirt\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "ShirtStoreWebsite.Controllers.ShirtController" ("ShirtStoreWebsite"). (122b2fdf)
+2026-01-11T20:09:49.7338019+00:00 4000001c-0002-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("14"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2026-01-11T20:09:49.7830015+00:00 4000001c-0002-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("39"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND [o].[object_id] NOT IN (SELECT [ep].[major_id]
+        FROM [sys].[extended_properties] AS [ep]
+        WHERE [ep].[minor_id] = 0
+            AND [ep].[class] = 1
+            AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0" (0723d8ff)
+2026-01-11T20:09:50.0161024+00:00 4000001c-0002-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Id], [s].[Color], [s].[Price], [s].[Size], [s].[Tax]
+FROM [Shirts] AS [s]" (0723d8ff)
+2026-01-11T20:09:50.0683211+00:00 4000001c-0002-fe00-b63f-84710c7967bb [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2026-01-11T20:09:50.2479517+00:00 4000001c-0002-fe00-b63f-84710c7967bb [INF] Executed ViewResult - view "Index" executed in 180.8806ms. (f66409e9)
+2026-01-11T20:09:50.2489535+00:00 4000001c-0002-fe00-b63f-84710c7967bb [INF] Executed action "ShirtStoreWebsite.Controllers.ShirtController.Index (ShirtStoreWebsite)" in 2328.3644ms (afa2e885)
+2026-01-11T20:09:50.2490526+00:00 4000001c-0002-fe00-b63f-84710c7967bb [INF] Executed endpoint '"ShirtStoreWebsite.Controllers.ShirtController.Index (ShirtStoreWebsite)"' (99874f2b)
+2026-01-11T20:09:50.2611745+00:00 4000001c-0002-fe00-b63f-84710c7967bb [INF] Request finished "HTTP/1.1" "GET" "http"://"localhost:54128""""/""" - 200 null "text/html; charset=utf-8" 2466.3928ms (74253ad3)
+2026-01-11T20:09:50.2805471+00:00 40000004-0007-fe00-b63f-84710c7967bb [INF] Request starting "HTTP/1.1" "GET" "http"://"localhost:54128""""/_vs/browserLink""" - null null (d509f86a)
+2026-01-11T20:09:50.2805471+00:00 4000001d-0002-fe00-b63f-84710c7967bb [INF] Request starting "HTTP/1.1" "GET" "http"://"localhost:54128""""/_framework/aspnetcore-browser-refresh.js""" - null null (d509f86a)
+2026-01-11T20:09:50.2836845+00:00 4000001d-0002-fe00-b63f-84710c7967bb [INF] Request finished "HTTP/1.1" "GET" "http"://"localhost:54128""""/_framework/aspnetcore-browser-refresh.js""" - 200 16519 "application/javascript; charset=utf-8" 2.9168ms (74253ad3)
+2026-01-11T20:09:50.3132394+00:00 40000004-0007-fe00-b63f-84710c7967bb [INF] Request finished "HTTP/1.1" "GET" "http"://"localhost:54128""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 32.5221ms (74253ad3)
+2026-01-11T20:10:11.4057755+00:00 40000005-0007-fe00-b63f-84710c7967bb [INF] Request starting "HTTP/1.1" "GET" "http"://"localhost:54128""""/Shirt/Delete/-1""" - null null (d509f86a)
+2026-01-11T20:10:11.4119485+00:00 40000005-0007-fe00-b63f-84710c7967bb [INF] Executing endpoint '"ShirtStoreWebsite.Controllers.ShirtController.Delete (ShirtStoreWebsite)"' (500cc934)
+2026-01-11T20:10:11.4184003+00:00 40000005-0007-fe00-b63f-84710c7967bb [INF] Route matched with "{action = \"Delete\", controller = \"Shirt\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Delete(Int32)" on controller "ShirtStoreWebsite.Controllers.ShirtController" ("ShirtStoreWebsite"). (122b2fdf)
+2026-01-11T20:10:11.4381256+00:00 40000005-0007-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2026-01-11T20:10:11.4393254+00:00 40000005-0007-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND [o].[object_id] NOT IN (SELECT [ep].[major_id]
+        FROM [sys].[extended_properties] AS [ep]
+        WHERE [ep].[minor_id] = 0
+            AND [ep].[class] = 1
+            AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0" (0723d8ff)
+2026-01-11T20:10:11.5514139+00:00 40000005-0007-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("32"ms) [Parameters=["@id='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [s].[Id], [s].[Color], [s].[Price], [s].[Size], [s].[Tax]
+FROM [Shirts] AS [s]
+WHERE [s].[Id] = @id" (0723d8ff)
+2026-01-11T20:10:11.5527378+00:00 40000005-0007-fe00-b63f-84710c7967bb [ERR] An error occured while trying to delete shirt with id of -1. (f3b90dc2)
+System.ArgumentNullException: Value cannot be null. (Parameter 'entity')
+   at Microsoft.EntityFrameworkCore.Utilities.Check.ThrowArgumentNull(String parameterName)
+   at Microsoft.EntityFrameworkCore.Utilities.Check.NotNull[T](T value, String parameterName)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Remove(TEntity entity)
+   at ShirtStoreWebsite.Services.ShirtRepository.RemoveShirt(Int32 id) in C:\M55340A_Allfiles\Mod10\Labfiles\Solution\01_ShirtStore\ShirtStoreWebsite\Services\ShirtRepository.cs:line 37
+   at ShirtStoreWebsite.Controllers.ShirtController.Delete(Int32 id) in C:\M55340A_Allfiles\Mod10\Labfiles\Solution\01_ShirtStore\ShirtStoreWebsite\Controllers\ShirtController.cs:line 35
+   at lambda_method198(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+2026-01-11T20:10:11.5534177+00:00 40000005-0007-fe00-b63f-84710c7967bb [INF] Executed action "ShirtStoreWebsite.Controllers.ShirtController.Delete (ShirtStoreWebsite)" in 134.9179ms (afa2e885)
+2026-01-11T20:10:11.5537121+00:00 40000005-0007-fe00-b63f-84710c7967bb [INF] Executed endpoint '"ShirtStoreWebsite.Controllers.ShirtController.Delete (ShirtStoreWebsite)"' (99874f2b)
+2026-01-11T20:10:11.5681624+00:00 40000005-0007-fe00-b63f-84710c7967bb [INF] Sending file. Request path: '"/error.html"'. Physical path: '"C:\M55340A_Allfiles\Mod10\Labfiles\Solution\01_ShirtStore\ShirtStoreWebsite\wwwroot\error.html"' (27b0a520)
+2026-01-11T20:10:11.5699490+00:00 40000005-0007-fe00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.ArgumentNullException: Value cannot be null. (Parameter 'entity')
+   at Microsoft.EntityFrameworkCore.Utilities.Check.ThrowArgumentNull(String parameterName)
+   at Microsoft.EntityFrameworkCore.Utilities.Check.NotNull[T](T value, String parameterName)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Remove(TEntity entity)
+   at ShirtStoreWebsite.Services.ShirtRepository.RemoveShirt(Int32 id) in C:\M55340A_Allfiles\Mod10\Labfiles\Solution\01_ShirtStore\ShirtStoreWebsite\Services\ShirtRepository.cs:line 37
+   at ShirtStoreWebsite.Controllers.ShirtController.Delete(Int32 id) in C:\M55340A_Allfiles\Mod10\Labfiles\Solution\01_ShirtStore\ShirtStoreWebsite\Controllers\ShirtController.cs:line 35
+   at lambda_method198(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2026-01-11T20:10:11.5706810+00:00 40000005-0007-fe00-b63f-84710c7967bb [INF] Request finished "HTTP/1.1" "GET" "http"://"localhost:54128""""/Shirt/Delete/-1""" - 500 null "text/html" 164.8951ms (74253ad3)
+2026-01-11T20:10:11.5939402+00:00 4000001e-0002-fe00-b63f-84710c7967bb [INF] Request starting "HTTP/1.1" "GET" "http"://"localhost:54128""""/_framework/aspnetcore-browser-refresh.js""" - null null (d509f86a)
+2026-01-11T20:10:11.5939409+00:00 40000006-0007-fe00-b63f-84710c7967bb [INF] Request starting "HTTP/1.1" "GET" "http"://"localhost:54128""""/Shirt/Delete/~/css/style.css""" - null null (d509f86a)
+2026-01-11T20:10:11.5940807+00:00 40000007-0001-fa00-b63f-84710c7967bb [INF] Request starting "HTTP/1.1" "GET" "http"://"localhost:54128""""/_vs/browserLink""" - null null (d509f86a)
+2026-01-11T20:10:11.5948490+00:00 4000001e-0002-fe00-b63f-84710c7967bb [INF] Request finished "HTTP/1.1" "GET" "http"://"localhost:54128""""/_framework/aspnetcore-browser-refresh.js""" - 200 16519 "application/javascript; charset=utf-8" 0.8431ms (74253ad3)
+2026-01-11T20:10:11.5979589+00:00 40000006-0007-fe00-b63f-84710c7967bb [INF] Request finished "HTTP/1.1" "GET" "http"://"localhost:54128""""/Shirt/Delete/~/css/style.css""" - 404 null null 3.9423ms (74253ad3)
+2026-01-11T20:10:11.5984192+00:00 40000006-0007-fe00-b63f-84710c7967bb [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: "GET" "http"://"localhost:54128""""/Shirt/Delete/~/css/style.css", Response status code: 404 (e353595a)
+2026-01-11T20:10:11.6088936+00:00 40000007-0001-fa00-b63f-84710c7967bb [INF] Request finished "HTTP/1.1" "GET" "http"://"localhost:54128""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 14.6947ms (74253ad3)

@@ -1,9 +1,9 @@
-using ShirtStoreWebsite.Models;
+﻿using ShirtStoreWebsite.Models;
 
 namespace ShirtStoreWebsite.Tests.Models
 {
     [TestClass]
-    public class ShirtTest
+    public sealed class ShirtTest
     {
         [TestMethod]
         public void IsGetFormattedTaxedPriceReturnsCorrectly()

@@ -7,9 +7,7 @@ using ShirtStoreWebsite.Services;
 using ShirtStoreWebsite.Tests.FakeRepositories;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace ShirtStoreWebsite.Tests.Controllers
 {
@@ -22,9 +20,11 @@ namespace ShirtStoreWebsite.Tests.Controllers
             IShirtRepository fakeShirtRepository = new FakeShirtRepository();
             Mock<ILogger<ShirtController>> mockLogger = new Mock<ILogger<ShirtController>>();
             ShirtController shirtController = new ShirtController(fakeShirtRepository, mockLogger.Object);
-            ViewResult viewResult = shirtController.Index() as ViewResult;
-            List<Shirt> shirts = viewResult.Model as List<Shirt>;
-            Assert.AreEqual(shirts.Count, 3);
+            ViewResult? viewResult = shirtController.Index() as ViewResult;
+            Assert.IsNotNull(viewResult);
+            Assert.IsNotNull(viewResult.Model);
+            List<Shirt> shirts = (List<Shirt>)viewResult.Model;
+            Assert.HasCount(3, shirts);
         }
     }
 }
