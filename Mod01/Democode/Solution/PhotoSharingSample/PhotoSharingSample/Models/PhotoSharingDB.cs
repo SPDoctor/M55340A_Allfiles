@@ -11,7 +11,6 @@ namespace PhotoSharingSample.Models
         public PhotoSharingDB(DbContextOptions<PhotoSharingDB> options)
            : base(options)
         {
-            Database.EnsureDeleted();
             Database.EnsureCreated();
         }
 
