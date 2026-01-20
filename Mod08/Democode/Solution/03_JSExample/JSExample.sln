@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.3.32804.467
+# Visual Studio Version 18
+VisualStudioVersion = 18.2.11408.102 d18.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSSExample", "CSSExample.csproj", "{0823CCFE-4667-4E50-B165-D4BD0F5C9EDE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSExample", "JSExample.csproj", "{0823CCFE-4667-4E50-B165-D4BD0F5C9EDE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

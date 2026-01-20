@@ -12,7 +12,6 @@ namespace SQLBooksWebApp.Data
         public BookContext(DbContextOptions<BookContext> options)
             : base(options)
         {
-            // Database.EnsureDeleted();
             Database.EnsureCreated();
         }
 

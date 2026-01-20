@@ -8,9 +8,10 @@ namespace GridExample.Data
         public ChessLeagueContext(DbContextOptions<ChessLeagueContext> options)
             : base(options)
         {
+             Database.EnsureCreated();
         }
 
-        public DbSet<Game> Games { get; set; }
+    public DbSet<Game> Games { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

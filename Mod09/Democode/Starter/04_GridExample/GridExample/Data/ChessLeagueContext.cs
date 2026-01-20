@@ -12,6 +12,7 @@ namespace GridExample.Data
         public ChessLeagueContext(DbContextOptions<ChessLeagueContext> options)
             : base(options)
         {
+            Database.EnsureCreated();
         }
 
         public DbSet<Game> Games { get; set; }

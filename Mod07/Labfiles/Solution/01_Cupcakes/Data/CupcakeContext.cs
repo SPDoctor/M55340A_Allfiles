@@ -7,7 +7,6 @@ namespace Cupcakes.Data
     {
         public CupcakeContext(DbContextOptions<CupcakeContext> options) : base(options)
         {
-            // Database.EnsureDeleted();
             Database.EnsureCreated();
         }
 
