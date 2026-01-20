@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using IdentityExample.Models;
 using IdentityExample.ViewModels;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Authorization;
 
 namespace IdentityExample.Controllers
 {
@@ -41,7 +36,7 @@ namespace IdentityExample.Controllers
                     return RedirectToAction("Index", "Student");
                 }
             }
-            ModelState.AddModelError("", "Faild to Login");
+            ModelState.AddModelError("", "Failed to Login");
             return View();
         }
 

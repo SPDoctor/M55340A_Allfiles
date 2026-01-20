@@ -6,12 +6,12 @@ using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<StudentContext>(options =>
     options.UseSqlite("Data Source=student.db"));
-builder.Services.AddDefaultIdentity<Student>(options =>
-{
+builder.Services.AddIdentity<Student, IdentityRole>(options => {
     options.Password.RequireDigit = true;
     options.Password.RequiredLength = 7;
     options.Password.RequireUppercase = true;
     options.User.RequireUniqueEmail = true;
+  options.SignIn.RequireConfirmedAccount = false;
 }).AddEntityFrameworkStores<StudentContext>();
 builder.Services.AddControllersWithViews();
 var app = builder.Build();

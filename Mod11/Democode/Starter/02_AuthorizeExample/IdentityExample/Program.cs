@@ -12,12 +12,13 @@ builder.Services.AddDefaultIdentity<Student>(options =>
     options.Password.RequiredLength = 7;
     options.Password.RequireUppercase = true;
     options.User.RequireUniqueEmail = true;
+    options.SignIn.RequireConfirmedAccount = false;
 }).AddEntityFrameworkStores<StudentContext>();
 builder.Services.AddControllersWithViews();
 var app = builder.Build();
 app.UseStaticFiles();
-app.UseAuthentication();
 app.UseRouting();
+app.UseAuthentication();
 app.MapControllerRoute(
     "StudentRoute",
     "{controller}/{action}/{id?}",

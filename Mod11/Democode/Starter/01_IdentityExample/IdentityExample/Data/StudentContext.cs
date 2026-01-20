@@ -9,7 +9,6 @@ namespace IdentityExample.Data
         public StudentContext(DbContextOptions<StudentContext> options)
             : base(options)
         {
-            Database.EnsureDeleted();
             Database.EnsureCreated();
         }
 
